@@ -153,17 +153,17 @@ const Layout = ({
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content={canonicalUrl || "https://v-landuk.com"}
+          content={canonicalUrl || "https://v-landnyc.com"}
         />
         <meta property="og:image" content={image} />
 
         <meta property="og:site_name" content="V-Land" />
-        <meta property="og:site" content="https://v-landuk.com" />
+        <meta property="og:site" content="https://v-landnyc.com" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content={canonicalUrl || "https://v-landuk.com"}
+          content={canonicalUrl || "https://v-landnyc.com"}
         />
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={desc} />
@@ -179,7 +179,7 @@ const Layout = ({
           </div>
           <Link href="/" passHref>
             <a className=" no-underline block relative h-[8vh] lg:h-[9vh] py-[1.8vh] lg:py-[1.5vh] cursor-pointer">
-              <img src="/Header.svg" alt="Header" className="h-full" />
+              <img src="/vland_nyc_logo.png" alt="Header" className="h-full" />
             </a>
           </Link>
           <div className="lg:hidden">
@@ -352,10 +352,10 @@ const Layout = ({
 export default Layout;
 
 Layout.defaultProps = {
-  title: "V-Land UK",
+  title: "V-Land NYC",
   page: "Home",
   image: "Logo.JPG",
   keywords:
-    "vegan magazine, vegan magazine UK, vegan articles, veganism UK, veganism in the UK, rise of veganism UK, best vegan magazine UK, UK vegan magazine, v-land UK, v land uk, vland uk, vland, v-land",
-  desc: "Your trusted UK vegan magazine",
+    "vegan magazine, vegan magazine NYC, vegan articles, veganism NYC, veganism in New York, rise of veganism NYC, best vegan magazine UK, NYC vegan magazine, v-land NYC, v land nyc, vland nyc, vland, v-land",
+  desc: "Your trusted vegan magazine",
 };

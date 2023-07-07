@@ -56,7 +56,7 @@ const Footer = () => {
           <div className="flex flex-col items-center justify-center px-4 gap-4 lg:gap-3">
             <Link href={"/"} replace>
               <img
-                src="/Header.svg"
+                src="/vland_nyc_logo.png"
                 alt="Header"
                 className="h-9 lg:h-12 object-contain"
               />

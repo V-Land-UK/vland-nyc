@@ -9,7 +9,7 @@ const cookiePolicy =({statement, cookies})=>{
     return(
 
         <div className="w-[80%] mx-auto list-outside">
-            {parse(statement)}
+            {statement && parse(statement)}
         </div>
     )
 }
@@ -18,17 +18,21 @@ const cookiePolicy =({statement, cookies})=>{
 
 
 export async function getStaticProps(){
-    const data = await axios.get(`${API}/cookie-policy`);
+    const response = await fetch(`${API}/cookie-policy`);
+    const data = await response.json();
     
     
-
+ 
     return {
+        
         props: {
-            statement: data?.data?.data?.attributes?.statement,
-            cookies: data?.data?.data?.attributes?.StatementInParts
+            statement:data?.data?.attributes?.statement || null,
+            cookies: data?.data?.attributes?.StatementInParts || null
         }
 
     };
+    
+   
 
 
 }

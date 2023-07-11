@@ -178,8 +178,8 @@ const Layout = ({
             <NavMenu />
           </div>
           <Link href="/" passHref>
-            <a className=" no-underline block relative h-[8vh] lg:h-[9vh] py-[1.8vh] lg:py-[1.5vh] cursor-pointer">
-              <img src="/vland_nyc_logo.png" alt="Header" className="h-full" />
+            <a className=" no-underline block relative w-[80px] sm:w-[115px] py-[1.8vh] lg:py-[1.5vh] cursor-pointer">
+              <img src="/vland_nyc_logo.png" alt="Header" className="w-full" />
             </a>
           </Link>
           <div className="lg:hidden">
@@ -267,9 +267,10 @@ const Layout = ({
               mb={8}
               mx="auto"
               onClick={() => router.push("/")}
+              
             >
               <Link href={"/"} replace>
-                <img src="/Header.svg" alt="Header" className="w-full" />
+                <img src="/vland_nyc_logo.png" alt="Header" className="h-auto w-[80px] sm:w-[100px] md:w-[130px]" />
               </Link>
             </Box>
             <div className="bg-white flex border-[1px] border-neutral-800 justify-between rounded-3xl overflow-hidden px-1 py-1">

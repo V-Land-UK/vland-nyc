@@ -86,8 +86,10 @@ const CookieSetupPrompt = ({bool=true})=>{
     }
 
     const acceptEssentialOnly = ()=>{
-        for(var i =0; i < Cookies?.cookieTypes["optional-cookies"].length; i++){
-            if(getCookie(convertToSlug(`${Cookies?.cookieTypes["optional-cookies"][i].title}`))) deleteCookie(convertToSlug(`${Cookies?.cookieTypes["optional-cookies"][i].title}`));
+        if(Object.keys(Cookies).length){
+            for(var i =0; i < Cookies?.cookieTypes["optional-cookies"].length; i++){
+                if(getCookie(convertToSlug(`${Cookies?.cookieTypes["optional-cookies"][i].title}`))) deleteCookie(convertToSlug(`${Cookies?.cookieTypes["optional-cookies"][i].title}`));
+            }
         }
         setCookie("preferences-set",`${Date.now()}`, {"max-age":2592000});
         setPreferencesSet(true);

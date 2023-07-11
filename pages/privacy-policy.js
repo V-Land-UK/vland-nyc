@@ -117,7 +117,7 @@ const PrivacyPolicy = ()=>
                                         </tr>
                                         <tr>
                                             <th className="align-center w-fit border-box border-r-2 border-b-2 border-black-500 px-2 bg-[#F8F8F8]">GDPR</th>
-                                            <td className="align-center w-fit border-box border-b-2 border-black-500 px-2 bg-[#F8F8F8]">the UK General Data Protection Regulation;</td>
+                                            <td className="align-center w-fit border-box border-b-2 border-black-500 px-2 bg-[#F8F8F8]">the USA General Data Protection Regulation;</td>
                                         </tr>
                                         <tr>
                                             <th className="align-center w-fit border-box border-r-2 border-b-2 border-black-500 px-2">V-Land Magazine Limited, we {" "}<span className="font-normal">or</span>{" "} us</th>
@@ -294,7 +294,7 @@ which you access the Website and the way you use and interact with its content.<
                             <li className="mt-3"><p className="ml-2">To make enquiries, exercise any of your rights set out above, or withdraw your consent to the processing of your Data
                             (where consent is our, legal basis for processing your Data), please contact us via this e-mail address:{" "}<a href="mailto:contact@v-landmagazine.com" className="underline">contact@v-landmagazine.com.</a></p></li>
                             <li className="mt-3"><p className="ml-2">If you are not satisfied with the way a complaint you make in relation to your Data is handled by us, you may be able
-                            to refer your complaint to the relevant data protection authority. For the UK, this is the Information Commissioner&apos;s
+                            to refer your complaint to the relevant data protection authority. For the USA, this is the Information Commissioner&apos;s
                             Office (ICO). The ICO&apos;s contact details can be found on their website at https://ico.org.uk/.</p></li>
                             <li className="mt-3"><p className="ml-2">It is important that the Data we hold about you is accurate and current. Please keep us informed if your Data changes
                             during the period for which we hold it.</p></li>
@@ -393,7 +393,7 @@ which you access the Website and the way you use and interact with its content.<
                                             </tr>
                                             <tr>
                                                 <th className="align-center w-fit border-box border-r-2 border-b-2 border-black-500 px-2 bg-[#F8F8F8]">GDPR</th>
-                                                <td className="align-center w-fit border-box border-b-2 border-black-500 px-2 bg-[#F8F8F8]">the UK General Data Protection Regulation;</td>
+                                                <td className="align-center w-fit border-box border-b-2 border-black-500 px-2 bg-[#F8F8F8]">the USA General Data Protection Regulation;</td>
                                             </tr>
                                             <tr>
                                                 <th className="align-center w-fit border-box border-r-2 border-b-2 border-black-500 px-2">V-Land Magazine Limited, we {" "}<span className="font-normal">or</span>{" "} us</th>
@@ -564,7 +564,7 @@ which you access the Website and the way you use and interact with its content.<
                                 <li className="mt-3"><p className="ml-2">To make enquiries, exercise any of your rights set out above, or withdraw your consent to the processing of your Data
                                 (where consent is our, legal basis for processing your Data), please contact us via this e-mail address:{" "}<a href="mailto:contact@v-landmagazine.com" className="underline">contact@v-landmagazine.com.</a></p></li>
                                 <li className="mt-3"><p className="ml-2">If you are not satisfied with the way a complaint you make in relation to your Data is handled by us, you may be able
-                                to refer your complaint to the relevant data protection authority. For the UK, this is the Information Commissioner&apos;s
+                                to refer your complaint to the relevant data protection authority. For the USA, this is the Information Commissioner&apos;s
                                 Office (ICO). The ICO&apos;s contact details can be found on their website at https://ico.org.uk/.</p></li>
                                 <li className="mt-3"><p className="ml-2">It is important that the Data we hold about you is accurate and current. Please keep us informed if your Data changes
                                 during the period for which we hold it.</p></li>

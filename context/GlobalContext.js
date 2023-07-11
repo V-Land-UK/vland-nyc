@@ -18,10 +18,9 @@ const GlobalProvider = ({ children }) => {
     error: false,
     text: "",
   });
-
-  //Get Articles again
-  useEffect(() => {
-    if (Categories.length < 1) {
+  useEffect(()=>
+  {
+    if(!(Categories.length)){
       axios
         .get(`${API}/categories`)
         .then(({ data }) => {
@@ -34,8 +33,13 @@ const GlobalProvider = ({ children }) => {
             return { ...prev, error: true };
           });
         });
-    }
 
+    }
+  }, [Categories.length, Categories]);
+
+  //Get Articles again
+  useEffect(() => {
+   
     if (Articles.length < 1) {
       const filters = qs.stringify({
         populate: "*",
@@ -63,7 +67,7 @@ const GlobalProvider = ({ children }) => {
           });
         });
     }
-  }, [Categories.length, Categories, Articles.length, Articles]);
+  }, [ Articles.length, Articles]);
 
   //reorder Categories
   const reorder = (item, pos, arr) => {
@@ -112,6 +116,7 @@ const GlobalProvider = ({ children }) => {
           },
         })
         .then((response) => {
+          response?.data?.data?.cookiePolicy?.data &&
           setCookies(
             response?.data?.data?.cookiePolicy?.data?.attributes
               ?.StatementInParts
@@ -128,7 +133,7 @@ const GlobalProvider = ({ children }) => {
       });
     }
   
-  },[ Object.keys(Cookies).length, Cookies])
+  },[Object.keys(Cookies).length,Cookies])
 
   //Find a user by ID
   const findUserByID = (id) => {

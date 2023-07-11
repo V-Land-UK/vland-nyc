@@ -45,7 +45,7 @@ const Team = ({ excerpt, team }) => {
           Team
         </h1>
         <h2 className="text-sm font-medium lg:text-[16px] leading-relaxed poppins mt-4 px-1">
-          {parse(excerpt)}
+          {excerpt && parse(excerpt)}
         </h2>
 
         {mobileView ? (
@@ -251,8 +251,8 @@ export async function getStaticProps() {
 
   return {
     props: {
-      excerpt: excerpt?.data?.attributes?.content,
-      team: team?.data,
+      excerpt: excerpt?.data?.attributes?.content || null,
+      team: team?.data || null,
     },
     revalidate: 10,
   };

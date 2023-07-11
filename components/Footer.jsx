@@ -58,7 +58,7 @@ const Footer = () => {
               <img
                 src="/vland_nyc_logo.png"
                 alt="Header"
-                className="w-[80px] sm:w-[115px] object-contain"
+                className="w-[130px] sm:w-[150px] object-contain"
               />
             </Link>
 

@@ -178,7 +178,7 @@ const Layout = ({
             <NavMenu />
           </div>
           <Link href="/" passHref>
-            <a className=" no-underline block relative w-[80px] sm:w-[115px] py-[1.8vh] lg:py-[1.5vh] cursor-pointer">
+            <a className=" no-underline block relative w-[130px] sm:w-[150px] py-[1.8vh] lg:py-[1.5vh] cursor-pointer">
               <img src="/vland_nyc_logo.png" alt="Header" className="w-full" />
             </a>
           </Link>

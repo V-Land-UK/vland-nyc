@@ -298,17 +298,25 @@ export async function getStaticProps({params})
     }
     
 
-    const {data} = await request.get(`/teams?${filter}`);
-    
-    const auxiliaryData = await axios.post(`${BASE_URL}/graphql`,{
-      query:category_query,
-      variables: JSON.stringify(category_query_variables),
+    const response = await fetch(`/teams?${filter}`);
+    const data = await response.json();
+    const auxiliaryResponse = await fetch(`${BASE_URL}/graphql`,{
+      method:"POST",
+      mode:"cors",
+      cache:"no-cache",
+      credentials:"same-origin",
       headers:{
         "Content-Type":"application/json"
-      }
+      },
+      redirect:"follow",
+      referrerPolicy:"no-referrer",
+      
+      body: JSON.stringify({query: category_query, variables:category_query_variables}),
+     
       
 
     });
+    const auxiliaryData = await auxiliaryResponse.json();
     
     
 
@@ -316,8 +324,8 @@ export async function getStaticProps({params})
    
     return{
         props:{
-            member:data?.data[0],
-            categories: auxiliaryData?.data?.data?.categories?.data,
+            member:data?.data?.length && data?.data[0] || null,
+            categories: auxiliaryData?.data?.categories?.data || null,
         }
         
 

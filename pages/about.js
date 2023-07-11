@@ -19,7 +19,7 @@ const About = ({ about }) => {
           About V-Land UK
         </h1>
         <div className="text-[16px] pt-3 lg:text-lg text-black tracking-wide leading-relaxed poppins my-2 whitespace-pre-line about">
-          {parse(about)}
+          {about && parse(about)}
         </div>
       </main>
     </Layout>
@@ -32,7 +32,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      about: data?.data?.attributes?.about,
+      about: data?.data?.attributes?.about || null,
     },
     revalidate: 10,
   };

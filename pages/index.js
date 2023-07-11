@@ -100,7 +100,7 @@ export default function Home({ articles, meta, ads }) {
 
   useEffect(() => {
     if (!hasMore) {
-      ref.current.classList.remove("hasMore");
+      ref?.current?.classList.remove("hasMore");
     }
   }, [queriesSent]);
 
@@ -162,7 +162,7 @@ export default function Home({ articles, meta, ads }) {
                 className={`hv-toggle inline-block w-[12rem] h-[4rem] mt-[2rem] text-primary bg-transparent border-4 border-primary cursor-pointer rounded-md text-lg ${
                   error ? "err_view" : ""
                 }`}
-                onClick={handleClick}
+                onClick={()=>{handleClick();}}
               >
                 {loading ? (
                   <Preloader />
